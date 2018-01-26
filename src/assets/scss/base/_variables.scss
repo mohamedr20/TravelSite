@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+$colors:(
+'background-blue':#0098EF,
+'light-blue':#09C6AB,
+'dark-blue':#BAC2C9,
+'white':#FEFEFE,
+ 'grey':#868686,
+ 'blue':#B5EEE6,
+);
+  
+ @function color($name){
+   @return map-get($colors,$name)
+ }
+
+$content-padding:10px;
+$content-padding-vertical:16px;
+$content-padding-horizontal:14px;
+
+$font-family-regular:'Lato',sans-serif;
+
+$base-line-height:1.2;
+$base-font-family:$font-family-regular;
+$base-font-size:18px;
+$large-font-size:24px;
+$small-font-size:15px;
+$base-font-color:color('white');
+  
+$h1-font-size:5em;
+$h2-font-size:3.375em;
+$h3-font-size:2.25em;
+$h4-font-size:1.5em;
+$h5-font-size:1em;
+$h6-font-size:.667em;
+
+//Background
+$default-bg-color:color('white');
+$alternate-bg-color:color('light-blue');
+$dark-bg-color:color('background-blue');
+
+//Links
+$link-base-color:color('dark-blue');
+$link-hover-color:color('white');
+
+$link-font-size:$base-font-size;
+$link-large-font:24px;
+$link-small-font:15px;
